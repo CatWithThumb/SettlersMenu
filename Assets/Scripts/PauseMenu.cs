@@ -51,7 +51,7 @@ public class PauseMenu : MonoBehaviour
     public void MainMenuButton()
     {
         Time.timeScale = 1; //resumes application so when loading main menu it shouldn't freeze
-        SceneManager.LoadScene("StartUpMenu", LoadSceneMode.Additive); //Loads StartUpMenu without unloading GameScene (they require eachother to function????)
+        SceneManager.LoadScene("StartUpMenu"); //Loads StartUpMenu 
         Debug.Log("Return to menu");
     }
 
